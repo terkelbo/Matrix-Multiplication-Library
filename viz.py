@@ -46,6 +46,10 @@ df8 = pd.read_csv('data/%s/%s/lib.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=Tr
     names=['memory','Mflop/s (lib)', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)                                                    
 '''
+df9 = pd.read_csv('data/%s/%s/blk.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+    names=['memory','Mflop/s (nat)', 'error', 'dummy', 'permutation'])\
+    .drop(['dummy','permutation', 'error'],axis=1)
+        
 		
 plt.figure()
 ax = df1.plot('memory',logx=False)
@@ -56,6 +60,7 @@ df5.plot('memory', ax=ax)
 df6.plot('memory', ax=ax)
 df7.plot('memory', ax=ax)
 #df8.plot('memory', ax=ax)
+df9.plot('memory', ax=ax)
 plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
 plt.xlabel('Memory Footprint (Kbyte)')
 plt.ylabel('Performance (Mflops/s)')
