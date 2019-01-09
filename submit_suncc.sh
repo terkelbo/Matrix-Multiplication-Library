@@ -23,6 +23,9 @@
 #BSUB -oo Output.out 
 #BSUB -eo Error.err 
 
+##Load studio module
+module load studio
+
 make -f Makefile.suncc clean
 make -f Makefile.suncc OPT="-g"
 
