@@ -1,6 +1,0 @@
-./run_all.sh: line 10: data/gcc/nopt/knm.gcc.dat: No such file or directory
-./run_all.sh: line 11: data/gcc/nopt/mnk.gcc.dat: No such file or directory
-./run_all.sh: line 10: data/gcc/Ofast/knm.gcc.dat: No such file or directory
-./run_all.sh: line 11: data/gcc/Ofast/mnk.gcc.dat: No such file or directory
-./run_all.sh: line 10: data/gcc/Ofast_loop/knm.gcc.dat: No such file or directory
-./run_all.sh: line 11: data/gcc/Ofast_loop/mnk.gcc.dat: No such file or directory
