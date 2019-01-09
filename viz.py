@@ -47,8 +47,8 @@ df8 = pd.read_csv('data/%s/%s/lib.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=Tr
     .drop(['dummy','permutation', 'error'],axis=1)                                                    
 '''
 df9 = pd.read_csv('data/%s/%s/blk.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
-    names=['memory','Mflop/s (nat)', 'error', 'dummy', 'permutation'])\
-    .drop(['dummy','permutation', 'error'],axis=1)
+    names=['memory','Mflop/s (blk)', 'error', 'dummy', 'permutation', 'block'])\
+    .drop(['dummy','permutation', 'error', 'block'],axis=1)
         
 		
 plt.figure()
