@@ -6,7 +6,7 @@ NUMBER_ROWS="50 100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400 150
 LOOPS=1000
 LOGEXT=$CC.dat
 
-/bin/rm -rf data/${CC}/${OPT}/nat.${OPT}.$LOGEXT data/${CC}/${OPT}/lib.${OPT}.$LOGEXT data/${CC}/${OPT}/knm.${OPT}.$LOGEXT data/${CC}/${OPT}/kmn.${OPT}.$LOGEXT data/${CC}/${OPT}/mkn.${OPT}.$LOGEXT data/${CC}/${OPT}/mnk.${OPT}.$LOGEXT data/${CC}/${OPT}/nkm.${OPT}.$LOGEXT data/${CC}/${OPT}/nmk.${OPT}.$LOGEXT
+/bin/rm -rf data/${CC}/${OPT}/nat.${OPT}.$LOGEXT data/${CC}/${OPT}/blk.${OPT}.$LOGEXT data/${CC}/${OPT}/lib.${OPT}.$LOGEXT data/${CC}/${OPT}/knm.${OPT}.$LOGEXT data/${CC}/${OPT}/kmn.${OPT}.$LOGEXT data/${CC}/${OPT}/mkn.${OPT}.$LOGEXT data/${CC}/${OPT}/mnk.${OPT}.$LOGEXT data/${CC}/${OPT}/nkm.${OPT}.$LOGEXT data/${CC}/${OPT}/nmk.${OPT}.$LOGEXT
 
 for m in $NUMBER_ROWS
 do
