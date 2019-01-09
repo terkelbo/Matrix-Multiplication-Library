@@ -34,15 +34,15 @@ gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_li
 
 ------------------------------------------------------------
 Sender: LSF System <lsfadmin@n-62-31-13>
-Subject: Job 1693647: <Assignment1> in cluster <dcc> Done
+Subject: Job 1693854: <Assignment1> in cluster <dcc> Done
 
-Job <Assignment1> was submitted from host <n-62-13-2> by user <s144315> in cluster <dcc> at Wed Jan  9 15:08:05 2019
-Job was executed on host(s) <n-62-31-13>, in queue <hpcintro>, as user <s144315> in cluster <dcc> at Wed Jan  9 15:08:05 2019
+Job <Assignment1> was submitted from host <n-62-13-2> by user <s144315> in cluster <dcc> at Wed Jan  9 15:12:05 2019
+Job was executed on host(s) <n-62-31-13>, in queue <hpcintro>, as user <s144315> in cluster <dcc> at Wed Jan  9 15:12:05 2019
 </zhome/d7/e/98038> was used as the home directory.
 </zhome/d7/e/98038/hpc/02614_Assignment1> was used as the working directory.
-Started at Wed Jan  9 15:08:05 2019
-Terminated at Wed Jan  9 15:10:39 2019
-Results reported at Wed Jan  9 15:10:39 2019
+Started at Wed Jan  9 15:12:05 2019
+Terminated at Wed Jan  9 16:09:52 2019
+Results reported at Wed Jan  9 16:09:52 2019
 
 Your job looked like:
 
@@ -106,16 +106,16 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   148.47 sec.
-    Max Memory :                                 44 MB
-    Average Memory :                             9.33 MB
+    CPU time :                                   3446.82 sec.
+    Max Memory :                                 210 MB
+    Average Memory :                             107.03 MB
     Total Requested Memory :                     2048.00 MB
-    Delta Memory :                               2004.00 MB
+    Delta Memory :                               1838.00 MB
     Max Swap :                                   -
     Max Processes :                              6
     Max Threads :                                7
-    Run time :                                   157 sec.
-    Turnaround time :                            154 sec.
+    Run time :                                   3488 sec.
+    Turnaround time :                            3467 sec.
 
 The output (if any) is above this job summary.
 
