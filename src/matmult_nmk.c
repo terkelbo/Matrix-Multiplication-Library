@@ -1,6 +1,6 @@
 void
 matmult_nmk(int m, int n, int k, double **A, double **B, double **C) {
-    
+
     int i, j, l;
 
 	for(j=0;j < n; j++){
