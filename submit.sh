@@ -31,7 +31,7 @@ source ~/stdpy3/bin/activate
 # here follow the commands you want to execute 
 ./run_all.sh gcc nopt
 
-python viz.py nopt
+python viz.py nopt gcc
 
 
 
@@ -43,7 +43,7 @@ source ~/stdpy3/bin/activate
 # here follow the commands you want to execute
 ./run_all.sh gcc Ofast
 
-python viz.py Ofast
+python viz.py Ofast gcc
 
 
 
@@ -56,5 +56,5 @@ source ~/stdpy3/bin/activate
 # here follow the commands you want to execute
 ./run_all.sh gcc Ofast_loop
 
-python viz.py Ofast_loop
+python viz.py Ofast_loop gcc
 
