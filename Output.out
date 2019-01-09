@@ -1,0 +1,9 @@
+gcc -Iinclude -g -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
+gcc -Iinclude -g -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
+gcc -Iinclude -g -fPIC   -c src/matmult_nmk.c -o obj/matmult_nmk.o
+gcc -Iinclude -g -fPIC   -c src/matmult_kmn.c -o obj/matmult_kmn.o
+gcc -Iinclude -g -fPIC   -c src/matmult_blk.c -o obj/matmult_blk.o
+gcc -Iinclude -g -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
+gcc -Iinclude -g -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
+gcc -Iinclude -g -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
+gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 

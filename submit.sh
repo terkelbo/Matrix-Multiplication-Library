@@ -23,11 +23,38 @@
 #BSUB -oo Output.out 
 #BSUB -eo Error.err 
 
-###source ~/stdpy3/bin/activate
+make clean
+make OPT="-g"
+
+source ~/stdpy3/bin/activate
 
 # here follow the commands you want to execute 
-./run_all_gcc.sh
+./run_all.sh gcc nopt
 
-###python viz.py
+python viz.py nopt
 
+
+
+make clean
+make OPT="-g -Ofast"
+
+source ~/stdpy3/bin/activate
+
+# here follow the commands you want to execute
+./run_all.sh gcc Ofast
+
+python viz.py Ofast
+
+
+
+
+make clean
+make OPT="-g -Ofast -funroll-loops"
+
+source ~/stdpy3/bin/activate
+
+# here follow the commands you want to execute
+./run_all.sh gcc Ofast_loop
+
+python viz.py Ofast_loop
 
