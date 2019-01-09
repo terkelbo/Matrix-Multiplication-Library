@@ -1,8 +1,9 @@
 void
 matmult_kmn(int m, int n, int k, double **A, double **B, double **C) {
 
-    int i, j, l, x;
-    
+    int i, j, l;
+	double x;  
+	  
     for(i=0;i<m;i++){
     	for(j=0;j<n;j++){
     		C[i][j]=0;
