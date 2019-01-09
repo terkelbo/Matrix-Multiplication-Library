@@ -20,33 +20,33 @@ except:
 	pass
                      
 
-df1 = pd.read_csv('data/%s/%s/kmn.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df1 = pd.read_csv('data/%s/%s/kmn.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
 	names=['memory','Mflop/s (kmn)', 'error', 'dummy', 'permutation'])\
 	.drop(['dummy','permutation', 'error'],axis=1)
-df2 = pd.read_csv('data/%s/%s/knm.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df2 = pd.read_csv('data/%s/%s/knm.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
     names=['memory','Mflop/s (knm)', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
-df3 = pd.read_csv('data/%s/%s/mnk.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df3 = pd.read_csv('data/%s/%s/mnk.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
     names=['memory','Mflop/s (mnk)', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
-df4 = pd.read_csv('data/%s/%s/mkn.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df4 = pd.read_csv('data/%s/%s/mkn.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
     names=['memory','Mflop/s (mkn)', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
-df5 = pd.read_csv('data/%s/%s/nkm.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df5 = pd.read_csv('data/%s/%s/nkm.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
     names=['memory','Mflop/s (nkm)', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
-df6 = pd.read_csv('data/%s/%s/nmk.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df6 = pd.read_csv('data/%s/%s/nmk.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
     names=['memory','Mflop/s (nmk)', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
-df7 = pd.read_csv('data/%s/%s/nat.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df7 = pd.read_csv('data/%s/%s/nat.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
     names=['memory','Mflop/s (nat)', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
 '''
-df8 = pd.read_csv('data/%s/%s/lib.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df8 = pd.read_csv('data/%s/%s/lib.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
     names=['memory','Mflop/s (lib)', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)                                                    
 '''
-df9 = pd.read_csv('data/%s/%s/blk.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
+df9 = pd.read_csv('data/%s/%s/blk.%s.%s.dat'%(cc, opt, opt, cc),delim_whitespace=True,header=None,
     names=['memory','Mflop/s (blk)', 'error', 'dummy', 'permutation', 'block'])\
     .drop(['dummy','permutation', 'error', 'block'],axis=1)
         
