@@ -8,6 +8,7 @@ gcc -Iinclude -g -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
 gcc -Iinclude -g -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
 gcc -Iinclude -g -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
 gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+/zhome/d7/e/98038/hpc/02614_Assignment1
 gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_nkm.c -o obj/matmult_nkm.o
 gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
 gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
@@ -18,6 +19,7 @@ gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
 gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
 gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
 gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+/zhome/d7/e/98038/hpc/02614_Assignment1
 gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_nkm.c -o obj/matmult_nkm.o
 gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
 gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
@@ -28,18 +30,19 @@ gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_mnk.c -o obj/matmu
 gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
 gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
 gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+/zhome/d7/e/98038/hpc/02614_Assignment1
 
 ------------------------------------------------------------
 Sender: LSF System <lsfadmin@n-62-31-13>
-Subject: Job 1693347: <Assignment1> in cluster <dcc> Done
+Subject: Job 1693598: <Assignment1> in cluster <dcc> Done
 
-Job <Assignment1> was submitted from host <n-62-13-2> by user <s144315> in cluster <dcc> at Wed Jan  9 14:22:59 2019
-Job was executed on host(s) <n-62-31-13>, in queue <hpcintro>, as user <s144315> in cluster <dcc> at Wed Jan  9 14:23:01 2019
+Job <Assignment1> was submitted from host <n-62-13-2> by user <s144315> in cluster <dcc> at Wed Jan  9 14:46:48 2019
+Job was executed on host(s) <n-62-31-13>, in queue <hpcintro>, as user <s144315> in cluster <dcc> at Wed Jan  9 14:46:49 2019
 </zhome/d7/e/98038> was used as the home directory.
 </zhome/d7/e/98038/hpc/02614_Assignment1> was used as the working directory.
-Started at Wed Jan  9 14:23:01 2019
-Terminated at Wed Jan  9 14:23:09 2019
-Results reported at Wed Jan  9 14:23:09 2019
+Started at Wed Jan  9 14:46:49 2019
+Terminated at Wed Jan  9 14:49:22 2019
+Results reported at Wed Jan  9 14:49:22 2019
 
 Your job looked like:
 
@@ -103,16 +106,16 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   4.70 sec.
-    Max Memory :                                 34 MB
-    Average Memory :                             34.00 MB
+    CPU time :                                   148.32 sec.
+    Max Memory :                                 23 MB
+    Average Memory :                             9.50 MB
     Total Requested Memory :                     2048.00 MB
-    Delta Memory :                               2014.00 MB
+    Delta Memory :                               2025.00 MB
     Max Swap :                                   -
-    Max Processes :                              4
-    Max Threads :                                5
-    Run time :                                   15 sec.
-    Turnaround time :                            10 sec.
+    Max Processes :                              6
+    Max Threads :                                7
+    Run time :                                   172 sec.
+    Turnaround time :                            154 sec.
 
 The output (if any) is above this job summary.
 

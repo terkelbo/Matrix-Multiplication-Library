@@ -4,9 +4,21 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
 import sys
+import shutil
+import os
 
 opt = sys.argv[1]
 cc = sys.argv[2]
+
+print(os.getcwd())
+
+# Remove existing figure
+file_path = os.path.join(os.getcwd(), 'fig', 'overview_%s_%s.png'%(cc,opt))
+try:
+	os.remove(file_path)
+except:
+	pass
+                     
 
 df1 = pd.read_csv('data/%s/%s/kmn.%s.gcc.dat'%(cc, opt, opt),delim_whitespace=True,header=None,
 	names=['memory','Mflop/s (kmn)', 'error', 'dummy', 'permutation'])\
