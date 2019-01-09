@@ -18,6 +18,7 @@ do
     ./matmult_c.${CC} mnk $m $m-10 $m-30 | grep -v CPU >> data/${CC}/${OPT}/mnk.${OPT}.$LOGEXT
     ./matmult_c.${CC} nkm $m $m-10 $m-30 | grep -v CPU >> data/${CC}/${OPT}/nkm.${OPT}.$LOGEXT
     ./matmult_c.${CC} nmk $m $m-10 $m-30 | grep -v CPU >> data/${CC}/${OPT}/nmk.${OPT}.$LOGEXT
+	./matmult_c.${CC} blk $m $m-10 $m-30 1000 | grep -v CPU >> data/${CC}/${OPT}/blk.${OPT}.$LOGEXT
 done
 
 exit 0    	    					
