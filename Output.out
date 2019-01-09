@@ -1,3 +1,4 @@
+gcc -Iinclude -g -fPIC   -c src/matmult_nkm.c -o obj/matmult_nkm.o
 gcc -Iinclude -g -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
 gcc -Iinclude -g -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
 gcc -Iinclude -g -fPIC   -c src/matmult_nmk.c -o obj/matmult_nmk.o
@@ -7,3 +8,117 @@ gcc -Iinclude -g -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
 gcc -Iinclude -g -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
 gcc -Iinclude -g -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
 gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_nkm.c -o obj/matmult_nkm.o
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_nmk.c -o obj/matmult_nmk.o
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_kmn.c -o obj/matmult_kmn.o
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_blk.c -o obj/matmult_blk.o
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
+gcc -Iinclude -g -Ofast -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
+gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_nkm.c -o obj/matmult_nkm.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_nmk.c -o obj/matmult_nmk.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_kmn.c -o obj/matmult_kmn.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_blk.c -o obj/matmult_blk.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
+gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n-62-31-13>
+Subject: Job 1693347: <Assignment1> in cluster <dcc> Done
+
+Job <Assignment1> was submitted from host <n-62-13-2> by user <s144315> in cluster <dcc> at Wed Jan  9 14:22:59 2019
+Job was executed on host(s) <n-62-31-13>, in queue <hpcintro>, as user <s144315> in cluster <dcc> at Wed Jan  9 14:23:01 2019
+</zhome/d7/e/98038> was used as the home directory.
+</zhome/d7/e/98038/hpc/02614_Assignment1> was used as the working directory.
+Started at Wed Jan  9 14:23:01 2019
+Terminated at Wed Jan  9 14:23:09 2019
+Results reported at Wed Jan  9 14:23:09 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh 
+### General options 
+### -- specify queue -- 
+#BSUB -q hpcintro
+### -- set the job Name -- 
+#BSUB -J Assignment1
+### -- ask for number of cores (default: 1) -- 
+#BSUB -n 1 
+### -- specify that the cores must be on the same host -- 
+#BSUB -R "span[hosts=1]"
+### -- specify that we need 2GB of memory per core/slot -- 
+#BSUB -R "rusage[mem=2GB]"
+### -- specify that we want the job to get killed if it exceeds 3 GB per core/slot -- 
+#BSUB -M 3GB
+### -- set walltime limit: hh:mm -- 
+#BSUB -W 24:00 
+### -- set the email address -- 
+# please uncomment the following line and put in your e-mail address,
+# if you want to receive e-mail notifications on a non-default address
+##BSUB -u your_email_address
+### -- Specify the output and error file. %J is the job-id -- 
+### -- -o and -e mean append, -oo and -eo mean overwrite -- 
+#BSUB -oo Output.out 
+#BSUB -eo Error.err 
+
+make clean
+make OPT="-g"
+
+source ~/stdpy3/bin/activate
+
+# here follow the commands you want to execute 
+./run_all.sh gcc nopt
+
+python viz.py nopt gcc
+
+
+
+make clean
+make OPT="-g -Ofast"
+
+source ~/stdpy3/bin/activate
+
+# here follow the commands you want to execute
+./run_all.sh gcc Ofast
+
+python viz.py Ofast gcc
+
+
+
+
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4.70 sec.
+    Max Memory :                                 34 MB
+    Average Memory :                             34.00 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               2014.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   15 sec.
+    Turnaround time :                            10 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <Error.err> for stderr output of this job.
+
