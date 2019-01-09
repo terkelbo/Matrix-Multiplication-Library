@@ -12,7 +12,7 @@ OPT	= -g -Ofast -funroll-loops
 PIC	= -fPIC
 
 CC	= gcc
-CFLAGS= $(OPT) $(PIC) $(XOPTS) 
+CFLAGS= $(OPT) $(PIC) $(XOPTS) -std=c99
 
 SOFLAGS = -shared 
 XLIBS	= -L /usr/lib64/atlas -lsatlas
