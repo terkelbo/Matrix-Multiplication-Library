@@ -1,18 +1,28 @@
 TARGET	= libmatmult.so
-LIBSRCS	= 
-LIBOBJS	= 
 
-OPT	= -g 
+SRC_DIR = src
+OBJ_DIR = obj
+
+SRC = $(wildcard $(SRC_DIR)/*.c)
+OBJ = $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
+
+CPPFLAGS = -Iinclude
+
+OPT	= -g -fast -xunroll=100000000 -xrestrict
 PIC	= -fPIC
 
 CC	= suncc
-CFLAGS= $(OPT) $(PIC) $(XOPTS)
+CFLAGS= $(OPT) $(PIC) $(XOPTS) 
 
 SOFLAGS = -shared 
-XLIBS	= 
+XLIBS	= -L /usr/lib64/atlas -lsatlas
 
-$(TARGET): $(LIBOBJS)
-	$(CC) -o $@ $(SOFLAGS) $(LIBOBJS) $(XLIBS)
+$(TARGET): $(OBJ)
+	$(CC) -o $@ $(SOFLAGS) $(OBJ) $(XLIBS) 
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
 clean:
-	@/bin/rm -f core core.* $(LIBOBJS) 
+	@/bin/rm -f core core.* $(OBJ_DIR)/$(OBJ) $(OBJ_DIR)/*.o
+
