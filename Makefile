@@ -24,5 +24,5 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
 clean:
-	@/bin/rm -f core core.* $(OBJ_DIR)/$(OBJ) 
+	@/bin/rm -f core core.* $(OBJ_DIR)/$(OBJ) $(OBJ_DIR)/*.o
 
