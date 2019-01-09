@@ -23,8 +23,8 @@
 #BSUB -oo Output.out 
 #BSUB -eo Error.err 
 
-make clean
-make OPT="-g"
+make -f Makefile.gcc clean
+make -f Makefile.gcc OPT="-g"
 
 source ~/stdpy3/bin/activate
 
@@ -35,8 +35,8 @@ python viz.py nopt gcc
 
 
 
-make clean
-make OPT="-g -Ofast"
+make -f Makefile.gcc clean
+make -f Makefile.gcc OPT="-g -Ofast"
 
 source ~/stdpy3/bin/activate
 
@@ -48,8 +48,8 @@ python viz.py Ofast gcc
 
 
 
-make clean
-make OPT="-g -Ofast -funroll-loops"
+make -f Makefile.gcc clean
+make -f Makefile.gcc OPT="-g -Ofast -funroll-loops"
 
 source ~/stdpy3/bin/activate
 
