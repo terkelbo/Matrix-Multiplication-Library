@@ -40,12 +40,12 @@ df6 = pd.read_csv('data/suncc/fast_loop/lib.fast_loop.suncc.dat',delim_whitespac
         
 		
 plt.figure()
-ax = df1.plot('memory',logx=False)
-df2.plot('memory', ax=ax)
-df3.plot('memory', ax=ax)
-df4.plot('memory', ax=ax)
-df5.plot('memory', ax=ax)
-df6.plot('memory', ax=ax)
+ax = df1.plot('memory',logx=False, style='.-')
+df2.plot('memory', ax=ax, style='.-')
+df3.plot('memory', ax=ax, style='.-')
+df4.plot('memory', ax=ax, style='.-')
+df5.plot('memory', ax=ax, style='.-')
+df6.plot('memory', ax=ax, style='.-')
 plt.legend(loc='lower left')
 plt.xlabel('Memory Footprint (Kbyte)')
 plt.ylabel('Performance (Mflops/s)')
