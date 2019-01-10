@@ -18,22 +18,22 @@ except:
                      
 
 df1 = pd.read_csv('data/gcc/nopt/lib.nopt.gcc.dat',delim_whitespace=True,header=None,
-    names=['memory','Mflop/s (lib)', 'error', 'dummy', 'permutation'])\
+    names=['memory','lib gcc nopt', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)                                                    
 df2 = pd.read_csv('data/gcc/Ofast/lib.Ofast.gcc.dat',delim_whitespace=True,header=None,
-    names=['memory','Mflop/s (lib)', 'error', 'dummy', 'permutation'])\
+    names=['memory','lib gcc Ofast', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
 df3 = pd.read_csv('data/gcc/Ofast_loop/lib.Ofast_loop.gcc.dat',delim_whitespace=True,header=None,
-    names=['memory','Mflop/s (lib)', 'error', 'dummy', 'permutation'])\
+    names=['memory','lib gcc Ofast_funroll', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
 df4 = pd.read_csv('data/suncc/nopt/lib.nopt.suncc.dat',delim_whitespace=True,header=None,
-    names=['memory','Mflop/s (lib)', 'error', 'dummy', 'permutation'])\
+    names=['memory','lib suncc nopt', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
 df5 = pd.read_csv('data/suncc/fast/lib.fast.suncc.dat',delim_whitespace=True,header=None,
-    names=['memory','Mflop/s (lib)', 'error', 'dummy', 'permutation'])\
+    names=['memory','lib suncc fast', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
 df6 = pd.read_csv('data/suncc/fast_loop/lib.fast_loop.suncc.dat',delim_whitespace=True,header=None,
-    names=['memory','Mflop/s (lib)', 'error', 'dummy', 'permutation'])\
+    names=['memory','lib suncc fast_unroll', 'error', 'dummy', 'permutation'])\
     .drop(['dummy','permutation', 'error'],axis=1)
         
        	    
