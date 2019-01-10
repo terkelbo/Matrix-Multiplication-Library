@@ -1,7 +1,7 @@
 #include <sys/param.h>
 
 void
-matmult_blk(int m, int n, int k, double **A, double **B, double **C, int bs) {
+matmult_blk(int m, int n, int k, double **restrict A, double **restrict B, double **restrict C, int bs) {
     
     int i, j, l;
 	int blk_i, blk_j, blk_l;

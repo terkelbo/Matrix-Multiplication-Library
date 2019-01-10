@@ -1,5 +1,5 @@
 void
-matmult_mnk(int m, int n, int k, double **A, double **B, double **C) {
+matmult_mnk(int m, int n, int k, double **restrict A, double **restrict B, double **restrict C) {
     
     int i, j, l;
 	
