@@ -1,48 +1,48 @@
-suncc -Iinclude -g -fPIC   -c src/matmult_nkm.c -o obj/matmult_nkm.o
-suncc -Iinclude -g -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
-suncc -Iinclude -g -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
-suncc -Iinclude -g -fPIC   -c src/matmult_nmk.c -o obj/matmult_nmk.o
-suncc -Iinclude -g -fPIC   -c src/matmult_kmn.c -o obj/matmult_kmn.o
-suncc -Iinclude -g -fPIC   -c src/matmult_blk.c -o obj/matmult_blk.o
-suncc -Iinclude -g -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
-suncc -Iinclude -g -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
-suncc -Iinclude -g -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
-suncc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
-/zhome/34/8/98022/hpc2019/02614_Assignment1
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_nkm.c -o obj/matmult_nkm.o
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_nmk.c -o obj/matmult_nmk.o
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_kmn.c -o obj/matmult_kmn.o
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_blk.c -o obj/matmult_blk.o
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
-suncc -Iinclude -g -fast -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
-suncc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
-/zhome/34/8/98022/hpc2019/02614_Assignment1
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_nkm.c -o obj/matmult_nkm.o
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_knm.c -o obj/matmult_knm.o
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_lib.c -o obj/matmult_lib.o
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_nmk.c -o obj/matmult_nmk.o
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_kmn.c -o obj/matmult_kmn.o
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_blk.c -o obj/matmult_blk.o
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_mnk.c -o obj/matmult_mnk.o
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_mkn.c -o obj/matmult_mkn.o
-suncc -Iinclude -g -fast -xrestrict -xunroll=10 -fPIC   -c src/matmult_nat.c -o obj/matmult_nat.o
-suncc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
-/zhome/34/8/98022/hpc2019/02614_Assignment1
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_nkm.c -o obj/matmult_nkm.o
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_knm.c -o obj/matmult_knm.o
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_lib.c -o obj/matmult_lib.o
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_nmk.c -o obj/matmult_nmk.o
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_kmn.c -o obj/matmult_kmn.o
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_blk.c -o obj/matmult_blk.o
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_mnk.c -o obj/matmult_mnk.o
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_mkn.c -o obj/matmult_mkn.o
+gcc -Iinclude -g -fPIC  -std=c99 -c src/matmult_nat.c -o obj/matmult_nat.o
+gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+/zhome/d7/e/98038/hpc/02614_Assignment1
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_nkm.c -o obj/matmult_nkm.o
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_knm.c -o obj/matmult_knm.o
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_lib.c -o obj/matmult_lib.o
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_nmk.c -o obj/matmult_nmk.o
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_kmn.c -o obj/matmult_kmn.o
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_blk.c -o obj/matmult_blk.o
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_mnk.c -o obj/matmult_mnk.o
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_mkn.c -o obj/matmult_mkn.o
+gcc -Iinclude -g -Ofast -fPIC  -std=c99 -c src/matmult_nat.c -o obj/matmult_nat.o
+gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+/zhome/d7/e/98038/hpc/02614_Assignment1
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_nkm.c -o obj/matmult_nkm.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_knm.c -o obj/matmult_knm.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_lib.c -o obj/matmult_lib.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_nmk.c -o obj/matmult_nmk.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_kmn.c -o obj/matmult_kmn.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_blk.c -o obj/matmult_blk.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_mnk.c -o obj/matmult_mnk.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_mkn.c -o obj/matmult_mkn.o
+gcc -Iinclude -g -Ofast -funroll-loops -fPIC  -std=c99 -c src/matmult_nat.c -o obj/matmult_nat.o
+gcc -o libmatmult.so -shared  obj/matmult_nkm.o obj/matmult_knm.o obj/matmult_lib.o obj/matmult_nmk.o obj/matmult_kmn.o obj/matmult_blk.o obj/matmult_mnk.o obj/matmult_mkn.o obj/matmult_nat.o -L /usr/lib64/atlas -lsatlas 
+/zhome/d7/e/98038/hpc/02614_Assignment1
 
 ------------------------------------------------------------
-Sender: LSF System <lsfadmin@n-62-31-13>
-Subject: Job 1695393: <Assignment1> in cluster <dcc> Done
+Sender: LSF System <lsfadmin@n-62-31-14>
+Subject: Job 1706021: <Assignment1> in cluster <dcc> Done
 
-Job <Assignment1> was submitted from host <n-62-31-1> by user <s144299> in cluster <dcc> at Wed Jan  9 20:05:45 2019
-Job was executed on host(s) <n-62-31-13>, in queue <hpcintro>, as user <s144299> in cluster <dcc> at Wed Jan  9 20:05:46 2019
-</zhome/34/8/98022> was used as the home directory.
-</zhome/34/8/98022/hpc2019/02614_Assignment1> was used as the working directory.
-Started at Wed Jan  9 20:05:46 2019
-Terminated at Wed Jan  9 20:53:21 2019
-Results reported at Wed Jan  9 20:53:21 2019
+Job <Assignment1> was submitted from host <n-62-13-2> by user <s144315> in cluster <dcc> at Thu Jan 10 13:49:10 2019
+Job was executed on host(s) <n-62-31-14>, in queue <hpcintro>, as user <s144315> in cluster <dcc> at Thu Jan 10 13:49:10 2019
+</zhome/d7/e/98038> was used as the home directory.
+</zhome/d7/e/98038/hpc/02614_Assignment1> was used as the working directory.
+Started at Thu Jan 10 13:49:10 2019
+Terminated at Thu Jan 10 14:58:54 2019
+Results reported at Thu Jan 10 14:58:54 2019
 
 Your job looked like:
 
@@ -73,30 +73,30 @@ Your job looked like:
 #BSUB -oo Output.out 
 #BSUB -eo Error.err 
 
-##Load studio module
-module load studio
+module load gcc/8.2.0
+module swap gcc/8.2.0
 
-make -f Makefile.suncc clean
-make -f Makefile.suncc OPT="-g"
+make -f Makefile.gcc clean
+make -f Makefile.gcc OPT="-g"
 
 source ~/stdpy3/bin/activate
 
 # here follow the commands you want to execute 
-./run_all.sh suncc nopt
+./run_all.sh gcc nopt
 
-python viz.py nopt suncc
+python viz.py nopt gcc
 
 
 
-make -f Makefile.suncc clean
-make -f Makefile.suncc OPT="-g -fast"
+make -f Makefile.gcc clean
+make -f Makefile.gcc OPT="-g -Ofast"
 
 source ~/stdpy3/bin/activate
 
 # here follow the commands you want to execute
-./run_all.sh suncc fast
+./run_all.sh gcc Ofast
 
-python viz.py fast suncc
+python viz.py Ofast gcc
 
 
 (... more ...)
@@ -106,16 +106,16 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   2836.24 sec.
-    Max Memory :                                 198 MB
-    Average Memory :                             84.90 MB
+    CPU time :                                   4158.40 sec.
+    Max Memory :                                 210 MB
+    Average Memory :                             103.82 MB
     Total Requested Memory :                     2048.00 MB
-    Delta Memory :                               1850.00 MB
+    Delta Memory :                               1838.00 MB
     Max Swap :                                   -
     Max Processes :                              6
     Max Threads :                                7
-    Run time :                                   2859 sec.
-    Turnaround time :                            2856 sec.
+    Run time :                                   4183 sec.
+    Turnaround time :                            4184 sec.
 
 The output (if any) is above this job summary.
 

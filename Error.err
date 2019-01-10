@@ -1,1 +1,2 @@
-Loaded module: studio/12u6
+Loaded dependency [gcc/8.2.0]: binutils
+Loaded module: gcc/8.2.0
