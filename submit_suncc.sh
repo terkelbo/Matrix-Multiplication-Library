@@ -24,7 +24,7 @@
 #BSUB -oo Output.out 
 #BSUB -eo Error.err 
 
-##Load studio module
+#Load studio module
 module load studio
 
 make -f Makefile.suncc clean
@@ -39,26 +39,26 @@ python viz.py nopt suncc
 
 
 
-##make -f Makefile.suncc clean
-##make -f Makefile.suncc OPT="-g -fast"
+make -f Makefile.suncc clean
+make -f Makefile.suncc OPT="-g -fast"
 
-##source ~/stdpy3/bin/activate
+source ~/stdpy3/bin/activate
 
-## here follow the commands you want to execute
-##./run_all.sh suncc fast
+# here follow the commands you want to execute
+./run_all.sh suncc fast
 
-##python viz.py fast suncc
-
-
+python viz.py fast suncc
 
 
-##make -f Makefile.suncc clean
-##make -f Makefile.suncc OPT="-g -fast -xrestrict -xunroll=10"
 
-##source ~/stdpy3/bin/activate
 
-## here follow the commands you want to execute
-##./run_all.sh suncc fast_loop
+make -f Makefile.suncc clean
+make -f Makefile.suncc OPT="-g -fast -xrestrict -xunroll=10"
 
-##python viz.py fast_loop suncc
+source ~/stdpy3/bin/activate
+
+# here follow the commands you want to execute
+./run_all.sh suncc fast_loop
+
+python viz.py fast_loop suncc
 
