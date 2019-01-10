@@ -7,9 +7,13 @@
 #BSUB -W 2:00
 
 module load studio
+module load gcc/8.2.0
+module swap gcc/8.2.0
+make -f Makefile.gcc clean
+make -f Makefile.gcc
 
 #Algorithm
-ALGO="mkn"
+ALGO="blk"
 
 #Parameters
 PARAM="1000 1000 1000"
@@ -18,7 +22,9 @@ BS="1000"
 #Experiment parameters
 EXPNAME="collect.data.$ALGO.er"
 
-COUNTERS="-h dch,on,dcm,on,l2h,on,l2m,on"
+rm -rf $EXPNAME
+
+COUNTERS="-h dcm,on,l2m,on,l3m,on"
 
 #Start collect algorithm
 collect -o $EXPNAME $COUNTERS ./matmult_c.gcc $ALGO $PARAM $BS
