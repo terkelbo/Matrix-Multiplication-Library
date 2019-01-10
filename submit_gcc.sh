@@ -23,6 +23,9 @@
 #BSUB -oo Output.out 
 #BSUB -eo Error.err 
 
+module load gcc/8.2.0
+module swap gcc/8.2.0
+
 make -f Makefile.gcc clean
 make -f Makefile.gcc OPT="-g"
 

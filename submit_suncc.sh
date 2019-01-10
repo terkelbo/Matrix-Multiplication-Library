@@ -18,6 +18,7 @@
 # please uncomment the following line and put in your e-mail address,
 # if you want to receive e-mail notifications on a non-default address
 ##BSUB -u your_email_address
+#BSUB -N
 ### -- Specify the output and error file. %J is the job-id -- 
 ### -- -o and -e mean append, -oo and -eo mean overwrite -- 
 #BSUB -oo Output.out 
@@ -38,26 +39,26 @@ python viz.py nopt suncc
 
 
 
-make -f Makefile.suncc clean
-make -f Makefile.suncc OPT="-g -fast"
+##make -f Makefile.suncc clean
+##make -f Makefile.suncc OPT="-g -fast"
 
-source ~/stdpy3/bin/activate
+##source ~/stdpy3/bin/activate
 
-# here follow the commands you want to execute
-./run_all.sh suncc fast
+## here follow the commands you want to execute
+##./run_all.sh suncc fast
 
-python viz.py fast suncc
-
-
+##python viz.py fast suncc
 
 
-make -f Makefile.suncc clean
-make -f Makefile.suncc OPT="-g -fast -xrestrict -xunroll=10"
 
-source ~/stdpy3/bin/activate
 
-# here follow the commands you want to execute
-./run_all.sh suncc fast_loop
+##make -f Makefile.suncc clean
+##make -f Makefile.suncc OPT="-g -fast -xrestrict -xunroll=10"
 
-python viz.py fast_loop suncc
+##source ~/stdpy3/bin/activate
+
+## here follow the commands you want to execute
+##./run_all.sh suncc fast_loop
+
+##python viz.py fast_loop suncc
 
